@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Endangered Animals</title>
+    <link rel="icon" href="public/images/panda_icon.png">
+    <link rel="stylesheet" type="text/css" href="public/styles/main.css">
+    <script type="text/javascript" src="js/app.js"></script>
+  </head>
+  <body>
+    <form class="new-animal-form">
+      <div class="form-item">
+        <label for="name">Name of Animal (e.g., "Panda"):</label>
+        <input id="name" type="text" required>
+      </div>
+
+      <div class="form-item">
+        <label for="type">Type of Animal (e.g., "Mammal"):</label>
+        <input id="type" type="text" required>
+      </div>
+
+      <div class="form-item">
+        <label for="continent">Continent:</label>
+        <select id="continent" required>
+          <option value="" hidden disabled selected>Select Continent</option>
+          <option value="Africa">Africa</option>
+          <option value="Antarctica">Antarctica</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="North America">North America</option>
+          <option value="South America">South America</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+      </div>
+
+      <input type="submit" value="Add Animal">
+    </form>
+
+    <button class="delete-all" type="button">Remove All Animals</button>
+
+    <h1>Endangered Animals List</h1>
+
+    <div class="animal-list">
+    </div>
+
+  </body>
+</html>
