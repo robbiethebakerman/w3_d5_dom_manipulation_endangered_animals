@@ -1,0 +1,75 @@
+/* main layout */
+
+body {
+  font-family: 'Arimo', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* form */
+
+.new-animal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* animal list */
+
+.animal-list {
+  display: grid;
+  grid-template: auto / repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.animal-list-element {
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 5px 0;
+}
+
+.animal-list-element li {
+
+}
+
+/* animal list element colours */
+
+.lc {
+ background-color: #99ff99;
+}
+
+.nt {
+  background-color: #ccff99;
+}
+
+.vu {
+  background-color: #ffff99;
+}
+
+.en {
+  background-color: #ffcc66;
+}
+
+.cr {
+  background-color: #ff9933;
+}
+
+.ew {
+  background-color: #ff3300;
+  color: white;
+}
+
+.ex {
+  background-color: #990000;
+  color: white;
+}
