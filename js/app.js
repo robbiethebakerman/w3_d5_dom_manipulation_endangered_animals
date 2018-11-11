@@ -44,7 +44,7 @@ const setAnimalColour = function(form, animalListElement) {
     animalListElement.classList.add('nt');
   } else if (form.status.value === 'VU (Vulnerable)') {
     animalListElement.classList.add('vu');
-  } else if (form.status.value === 'EN (Endangered))') {
+  } else if (form.status.value === 'EN (Endangered)') {
     animalListElement.classList.add('en');
   } else if (form.status.value === 'CR (Critically Endangered)') {
     animalListElement.classList.add('cr');

@@ -9,40 +9,59 @@
     <script type="text/javascript" src="js/app.js"></script>
   </head>
   <body>
-    <form class="new-animal-form">
-      <div class="form-item">
-        <label for="name">Name of Animal (e.g., "Panda"):</label>
-        <input id="name" type="text" required>
-      </div>
 
-      <div class="form-item">
-        <label for="type">Type of Animal (e.g., "Mammal"):</label>
-        <input id="type" type="text" required>
-      </div>
+    <h1>Add an endangered animal</h1>
 
-      <div class="form-item">
-        <label for="status">Conservation Status:</label>
-        <select id="status" required>
-          <option value="" hidden disabled selected>Select Conservation Status</option>
-          <option value="LC (Least Concern)">LC (Least Concern)</option>
-          <option value="NT (Near Threatened)">NT (Near Threatened)</option>
-          <option value="VU (Vulnerable)">VU (Vulnerable)</option>
-          <option value="EN (Endangered)">EN (Endangered)</option>
-          <option value="CR (Critically Endangered)">CR (Critically Endangered)</option>
-          <option value="EW (Extinct in the Wild)">EW (Extinct in the Wild)</option>
-          <option value="EX (Extinct)">EX (Extinct)</option>
-        </select>
-      </div>
+    <div class="form-container">
+      <form class="new-animal-form">
+        <div class="form-item">
+          <label for="name">Name of Animal (e.g., "Panda"):</label>
+        </div>
 
-      <input type="submit" value="Add Animal">
-    </form>
+        <div class="form-item">
+          <input id="name" type="text" required>
+        </div>
 
-    <button class="delete-all" type="button">Remove All Animals</button>
+        <div class="form-item">
+          <label for="type">Type of Animal (e.g., "Mammal"):</label>
+        </div>
+
+        <div class="form-item">
+          <input id="type" type="text" required>
+        </div>
+
+        <div class="form-item">
+          <label for="status">Conservation Status:</label>
+        </div>
+
+        <div class="form-item">
+          <select id="status" required>
+            <option value="" hidden disabled selected>Select Conservation Status</option>
+            <option value="LC (Least Concern)">LC (Least Concern)</option>
+            <option value="NT (Near Threatened)">NT (Near Threatened)</option>
+            <option value="VU (Vulnerable)">VU (Vulnerable)</option>
+            <option value="EN (Endangered)">EN (Endangered)</option>
+            <option value="CR (Critically Endangered)">CR (Critically Endangered)</option>
+            <option value="EW (Extinct in the Wild)">EW (Extinct in the Wild)</option>
+            <option value="EX (Extinct)">EX (Extinct)</option>
+          </select>
+        </div>
+
+        <div class="form-item submit">
+          <input type="submit" value="Add Animal">
+        </div>
+      </form>
+    </div>
 
     <h1>Endangered Animals List</h1>
 
     <div class="animal-list">
     </div>
+
+    <div class="remove-all">
+      <button class="delete-all" type="button">Remove All Animals</button>
+    </div>
+
 
   </body>
 </html>
